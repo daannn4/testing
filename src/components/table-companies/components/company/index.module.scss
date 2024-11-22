@@ -1,0 +1,14 @@
+.Company {
+    td {
+        font-size: 18px;
+        text-wrap: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 100px;
+        height: 50px;
+    }
+
+    .Edit {
+        margin-left: 10px;
+    }
+}

@@ -1,0 +1,36 @@
+.CustomCheckbox {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+    user-select: none;
+}
+  
+.CustomCheckbox input {
+  display: none;
+}
+  
+.CustomCheckbox span {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #007bff;
+  border-radius: 4px; 
+  background-color: white;
+  position: relative;
+  display: inline-block;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+  
+.CustomCheckbox input:checked + span {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+  
+.CustomCheckbox:hover span {
+  border-color: #0056b3;
+}
+  
