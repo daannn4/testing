@@ -24,8 +24,7 @@ body {
 }
 
 .App {
-    margin: 40px auto;
-    width: 1400px;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }

@@ -1,16 +1,14 @@
 import { getCompaniesSelector } from 'src/_redux/companies/selectors';
-import { useAppSelector } from 'src/_utils/hooks/redux';
-import { companiesApi } from 'src/api/requests/companies/api';
+import { useAppDispatch, useAppSelector } from 'src/_utils/hooks/redux';
 import cls from './index.module.scss';
+import { addDeleteIds } from 'src/_redux/modal-delete';
 
 export const Actions = () => {
   const selectedCompanies = useAppSelector(getCompaniesSelector).filter(({ isSelected }) => isSelected);
-  const [fetchDelete, { isLoading }] = companiesApi.useDeleteCompaniesMutation();
+  const dispatch = useAppDispatch();
 
   const onDeleteCompanies = () => {
-    fetchDelete({
-      ids: selectedCompanies.map(({ id }) => id)
-    });
+    dispatch(addDeleteIds(selectedCompanies.map(({ id }) => id)));
   };
 
   const isHasSelectedCompanies = selectedCompanies.length > 0;
@@ -18,7 +16,7 @@ export const Actions = () => {
   return (
     <div className={cls.Actions}>
       <button
-        disabled={!isHasSelectedCompanies || isLoading}
+        disabled={!isHasSelectedCompanies}
         onClick={onDeleteCompanies}
       >
         Удалить ({selectedCompanies.length})

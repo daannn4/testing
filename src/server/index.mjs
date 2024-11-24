@@ -54,14 +54,13 @@ app.post('/api/companies-create', (req, res) => {
   }
 
   const data = readData();
-  const lastElement = data.companies[data.companies.length - 1];
   const newCompany = {
-    id: lastElement ? lastElement.id + 1 : 0,
+    id: Math.floor(Math.random() * (99999999999 - 1 + 1)) + 1,
     name,
     address
   };
 
-  data.companies.push(newCompany);
+  data.companies.unshift(newCompany);
   writeData(data);
 
   setTimeout(() => {

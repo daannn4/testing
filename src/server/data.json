@@ -1,66 +1,6 @@
 {
   "companies": [
     {
-      "id": 21,
-      "name": "Company U",
-      "address": "Address 21"
-    },
-    {
-      "id": 22,
-      "name": "Company V",
-      "address": "Address 22"
-    },
-    {
-      "id": 23,
-      "name": "Company W",
-      "address": "Address 23"
-    },
-    {
-      "id": 24,
-      "name": "Company X",
-      "address": "Address 24"
-    },
-    {
-      "id": 25,
-      "name": "Company Y",
-      "address": "Address 25"
-    },
-    {
-      "id": 26,
-      "name": "Company Z",
-      "address": "Address 26"
-    },
-    {
-      "id": 27,
-      "name": "Company A",
-      "address": "Address 27"
-    },
-    {
-      "id": 28,
-      "name": "Company B",
-      "address": "Address 28"
-    },
-    {
-      "id": 29,
-      "name": "Company C",
-      "address": "Address 29"
-    },
-    {
-      "id": 30,
-      "name": "Company D",
-      "address": "Address 30"
-    },
-    {
-      "id": 31,
-      "name": "Company E",
-      "address": "Address 31"
-    },
-    {
-      "id": 32,
-      "name": "Company F",
-      "address": "Address 32"
-    },
-    {
       "id": 33,
       "name": "Company G",
       "address": "Address 33"
@@ -79,11 +19,6 @@
       "id": 36,
       "name": "Company J",
       "address": "Address 36"
-    },
-    {
-      "id": 37,
-      "name": "Company K",
-      "address": "Address 37"
     },
     {
       "id": 38,
